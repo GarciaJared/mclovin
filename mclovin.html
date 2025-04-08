@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>McLovin</title>
+</head>
+
+<body>
+    <div class="card-id">
+        <div class="left-side">
+            <div class="avatar">
+                <img src="./mclovin.png" alt="mclovin">
+            </div>
+            <div class="barcode">
+                <img src="./barcode.PNG" alt="barcode">
+            </div>
+            <div class="barcode-txt">
+                <h4>McLOVIN</h4>
+                <h4>892 MOMONA ST</h4>
+                <h4>HONOLULU, HI 96820</h4>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="title-img">
+                <img src="./hawaii.png" alt="">
+            </div>
+            <div class="number">
+                <h4>NUMBER: </h4><strong> 01-47-87441</strong>
+            </div>
+            <div class="dates">
+                <h5>DOB 06/03/1981</h5>
+                <h5 class="exp">EXP 06/03/2008</h5>
+            </div>
+            <div class="identification">
+                <div class="ht">
+                    <p>HT</p>
+                    <p>5-10</p>
+                </div>
+                <div class="wt">
+                    <p>WT</p>
+                    <p>150</p>
+                </div>
+                <div class="hair">
+                    <p>HAIR</p>
+                    <p>BRO</p>
+                </div>
+                <div class="eye">
+                    <p>EYES</p>
+                    <p>BRO</p>
+                </div>
+                <div class="sx">
+                    <p>SEX</p>
+                    <p>M</p>
+                </div>
+                <div class="cty">
+                    <p>CTY</p>
+                    <p>0</p>
+                </div>
+
+            </div>
+            <div class="more-info">
+                <div class="issue">
+                    <p>ISSUE</p>
+                    <p>06/03/2008</p>
+                </div>
+                <div class="date">
+                    <p>0</p>
+                </div>
+                <div class="clss">
+                    <p>CLASS</p>
+                    <P>3</P>
+                </div>
+                <div class="restr">
+                    <p>RESTR</p>
+                </div>
+                <div class="endorse">
+                    <p>ENDORSE</p>
+                </div>
+            </div>
+            <div class="signature">
+                <img src="./signature.png" alt="signature">
+            </div>
+        </div>
+        <div class="rainbow">
+            <img src="./rainbow.jpeg" alt="rainbow">
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-id {
+        display: flex;
+        width: 450px;
+        height: 300px;
+        border-radius: 8px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 1px solid #000;
+        grid-template-columns: 1fr 1fr;
+        font-family: 'Poppins', sans-serif;
+        position: relative; /* para posicionar hijos absolutos EXPLICAR */
+        overflow: hidden;  /* evita que el arcoíris sobresalga EXPLICAR*/
+    }
+
+    .left-side,
+    .right-side {
+        position: relative;
+        z-index: 1;
+    }
+
+    .rainbow {
+        position: absolute;
+        top: -50px;
+        bottom: -150px;
+        left: -100px;
+        right: -50px;
+        width: 100%;
+        height: 300px; /* ajusta según el tamaño del arcoíris */
+        z-index: 0; /* queda detrás del contenido */
+    }
+
+    .rainbow img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .left-side {
+        grid-template-columns: 50% 50%;
+    }
+
+    .avatar {
+        width: 100%;
+        height: 60%;
+    }
+
+    .avatar img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .barcode {
+        width: 100%;
+        height: 20%;
+    }
+
+    .barcode img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .barcode-txt {
+        width: 100%;
+        height: 20%;
+    }
+
+    .barcode-txt h4 {
+        margin: 0;
+        margin-left: 1rem;
+        padding: 0;
+        font-size: 48%;
+    }
+
+    .right-side {
+        width: 80%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    .title-img img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .number {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .number h4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .number strong {
+        margin: 0;
+        padding: 0;
+        font-size: 80%;
+        padding-left: 10px;
+    }
+
+
+    .dates {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dates h5 {
+        margin: 0;
+        padding: 0;
+        font-size: 80%;
+    }
+
+    .dates .exp {
+        padding-left: 10px;
+    }
+
+    .identification {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 5px;
+    }
+
+    .identification div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .identification p {
+        margin: 0;
+        padding: 2px 5px;
+        font-size: 70%;
+    }
+
+    .more-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        font-size: 70%;
+    }
+
+    .more-info p {
+        margin: 0;
+        padding: 2px 5px;
+        font-size: 70%;
+    }
+
+    .signature {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signature img {
+        width: 50%;
+        height: 50%;
+    }
+</style>
+
+</html>
